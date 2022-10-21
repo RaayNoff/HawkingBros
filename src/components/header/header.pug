@@ -1,0 +1,44 @@
+include ../../views/helpers/social.pug
+include ../../views/helpers/header-control.pug
+
+header.header
+	<div class="container">
+	
+		div.header__logo
+			img(src="./assets/images/Logo.png")
+
+		div.header__burger.burger
+			span.burger__span
+			span.burger__span
+			span.burger__span
+	
+		nav.header__nav.nav
+			a.nav__item(href="#") каталог товаров
+			a.nav__item(href="#") доставка и оплата
+			a.nav__item(href="#") цены
+			a.nav__item(href="#") контакты
+
+
+		a.header__telephone.telephone(href="tel:+78125092198"): <span class="telephone__highlight">+7 (812)</span> 509 21 98
+
+		div.header__callmsg ПЕРЕЗВОНИТЕ МНЕ
+
+		section.header__socials.socials 
+			+social('vk')
+			+social('telegram')
+			+social('instagram')
+			+social('whatsapp')
+
+		section.header__controls.controls
+			+control('loupe')
+			+control('heart')
+			+control('cart', true)
+				
+			
+
+	</div>
+
+
+
+
+		

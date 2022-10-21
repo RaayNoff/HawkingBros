@@ -9,9 +9,8 @@ html(lang="ru")
     title #{title ? title : 'Заголовок страницы'}
     link(href="/assets/styles/main.css" rel="stylesheet")
   body
-    main
-      include ../../components/header/header
-      block content
-      include ../../components/footer/footer
-    script(src="/assets/js/index.js")
-    block scripts
+   include ../../components/header/header
+   block content
+   include ../../components/footer/footer
+  script(src="/assets/js/index.js")
+  block scripts

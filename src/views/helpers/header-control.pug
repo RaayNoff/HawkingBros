@@ -1,0 +1,7 @@
+mixin control(name, isCart = false)
+	if isCart
+		div.controls__item: a(href="#")
+			div.controls__cart.cart: span.cart__count 10
+			svg: use(xlink:href=`./assets/images/sprite.svg#${name}`)
+	else
+		div.controls__item: a(href="#"): svg: use(xlink:href=`./assets/images/sprite.svg#${name}`)

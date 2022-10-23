@@ -1,0 +1,23 @@
+section.consultation
+	<div class="container">
+		p.consultation__title необходима консультация?
+		p.consultation__desc оставьте заявку или свяжитесь с нами в социальных сетях 
+
+
+		section.consultion__socials
+			a.consultation__social: svg: use(xlink:href=`./assets/images/sprite.svg#vk`)
+			a.consultation__social: svg: use(xlink:href=`./assets/images/sprite.svg#telegram`)
+			a.consultation__social: svg: use(xlink:href=`./assets/images/sprite.svg#instagram`)
+			a.consultation__social: svg: use(xlink:href=`./assets/images/sprite.svg#whatsapp`)
+
+		form.consultation__form.form
+			p.form__title Для <span>консультации</span> заполните форму!
+			p.form__text.default__description С Вами свяжутся в ближайшее время
+			section.form__controls
+				input.form__input(type="text" name="userName" placeholder="Ваше имя")
+				input.form__input(type="text" name="userPhone" placeholder="Ваш телефон")
+				button.form__button отправить
+
+
+
+	</div>

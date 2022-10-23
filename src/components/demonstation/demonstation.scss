@@ -1,0 +1,33 @@
+.demostration {
+	margin-bottom: 121px;
+	// .demostration__title
+	&__title {
+		margin-bottom: 66px;
+	}
+
+	&__desc {
+		margin-bottom: 51px;
+	}
+
+	// .demostration__container
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: url("../../assets/images/Blob2.png");
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: auto;
+		overflow: visible;
+
+		width: 1156.11px;
+		height: 487px;
+		max-height: 487px;
+		max-width: 1156.11px;
+
+		iframe {
+			transform: translateY(12px);
+		}
+	}
+}

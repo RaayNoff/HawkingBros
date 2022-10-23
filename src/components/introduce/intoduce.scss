@@ -1,0 +1,97 @@
+.introduce {
+	margin-bottom: 64px;
+
+	// .introduce__title
+	&__title {
+		margin-bottom: 41px;
+	}
+
+	// .introduce__breadcrumb
+	&__breadcrumb {
+		margin-bottom: 81px;
+	}
+
+	// .introduce__description
+	&__description {
+		.purple-highlite {
+			font-weight: 600;
+		}
+		margin-bottom: 47px;
+	}
+
+	// .introduce__benefit
+	&__benefit {
+		display: flex;
+	}
+
+	// .introduce__picture
+	&__picture {
+	}
+}
+
+.benefit {
+	// .benefit__list
+	&__list {
+		flex-shrink: 0;
+	}
+
+	// .benefit__title
+	&__title {
+		.purple-highlite {
+			font-weight: 800;
+		}
+		margin-bottom: 39px;
+	}
+
+	// .benefit__item
+	&__item {
+		display: flex;
+		list-style-type: none;
+		margin-left: 45px;
+		line-height: 24 / 16 * 100%;
+		font-weight: 400;
+		font-size: 16px;
+		color: #000;
+		margin-bottom: 25px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: " ";
+			display: block;
+			color: transparent;
+			border-radius: 50%;
+			background-color: $carrot;
+			width: 9px;
+			height: 9px;
+			min-width: 9px;
+			min-height: 9px;
+			margin-right: 17px;
+			line-height: 24 / 16 * 100%;
+			font-size: 16px;
+			transform: translateY(7px);
+		}
+	}
+}
+
+.composite {
+	flex-shrink: 0;
+	background-image: url("../../assets/images/Blob.png");
+	max-width: 766px;
+	max-height: 573px;
+	width: 766px;
+	height: 573px;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: auto;
+	overflow: visible;
+
+	transform: translateX(46px);
+
+	&__dimohod {
+		position: relative;
+		top: -28px;
+		left: 179px;
+	}
+}

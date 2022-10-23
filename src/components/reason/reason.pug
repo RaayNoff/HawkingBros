@@ -1,0 +1,22 @@
+include ../../views/helpers/reason.pug
+
+section.reason
+	<div class="container strip">
+		h2.reason__title.second-title Почему Дымоход.ру?
+		p.reason__desc.default__description В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали,<br>проверенного теплоизолятора, по современной технологии плазменной сварки «встык» 
+
+		section.reason__list.list
+			article.list__item.item
+				+reason('guarantee')
+				p.item__title Большой гарантийный срок
+				p.item__desc.default__description Крепёж, стыковка элементов – <span class="purple-highlite">10 лет</span><br>Сквозная коррозия труб – <span class="purple-highlite">5 лет</span><br>Гидроизоляция – <span class="purple-highlite">3 года</span>
+			article.list__item.item
+				+reason('architect')
+				p.item__title Помощь в покупке агрегата 
+				p.item__desc.default__description (печи, камина, котла), а также качественной<br>установке на объекте с последующим<br>гарантийным сервисом
+			article.list__item.item
+				+reason('review')
+				p.item__title Реальные отзывы клиентов
+				p.item__desc.default__description Убедитесь в добросовестности исполнения,<br>прочитав Отзывы клиентов в специальном<br>разделе.
+
+	</div>

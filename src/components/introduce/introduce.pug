@@ -1,0 +1,32 @@
+include ../../views/helpers/breadcrumb-arrow.pug
+include ../../views/helpers/dots.pug
+
+section.introduce 
+	<div class="container">
+		h1.introduce__title.main-title Монтаж дымоходов
+		
+		section.introduce__breadcrumb.breadcrumb
+			section.breadcrumb__container
+				p.breadcrumb__item Главная	
+				+breadcrumb-arrow()
+				p.breadcrumb__item.breadcrumb__highlighted Монтаж дымоходов
+
+		p.introduce__description.default__description В <span class="purple-highlite">Дымоход.ру</span> вам помогут как приобрести, так и установить дымоход любой конфигурации. В нашем монтажном отделе, состоящим из трёх <br>бригад работают квалифицированные специалисты, которые ежегодно проходят курсы повышения квалификации. Все работы проводим<br>качественно и аккуратно, в короткий срок и на совесть .
+
+		section.introduce__benefit.benefit
+			ul.benefit__list
+				h3.benefit__title.third-title Lorem ipsum dolor sit amet<br><span class="purple-highlite">Lorem ipsum</span>
+				li.benefit__item Доступные цены
+				li.benefit__item Собственное производсвто  Дымоходов
+				li.benefit__item Выполнение необходимых работ, связанных с установкой<br>камина, печи, котла
+				li.benefit__item Гарантия (от трёх до десяти лет)
+				li.benefit__item Работаем чисто, аккуратно, убираем за собой, не<br>сквернословим
+				li.benefit__item Только русские квалифицированные специалисты
+				li.benefit__item Устанавливаем любые дымоходы всех производителей
+			section.benefit__picture.composite
+				img(src="../assets/images/dimohod.png").composite__dimohod
+
+
+
+
+	</div>

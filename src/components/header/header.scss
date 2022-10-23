@@ -1,8 +1,7 @@
-@use "sass:math";
-
 .header {
 	margin-top: 26px;
-	.container {
+	margin-bottom: 56px;
+	.header-container {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -33,11 +32,11 @@
 	&__callmsg {
 		margin-right: 61px;
 		padding-bottom: 3px;
-		color: #ae2236;
-		border-bottom: 1px dashed #ae2236;
+		color: $deepCarmine;
+		border-bottom: 1px dashed $deepCarmine;
 		font-weight: 700;
 		font-size: 14px;
-		line-height: math.div(17, 14) * 100%;
+		line-height: 17 / 14 * 100%;
 		text-transform: uppercase;
 	}
 
@@ -51,7 +50,7 @@
 	}
 }
 .burger {
-	border: 1px solid #4c858b;
+	border: 1px solid $turquoise-blue;
 	border-radius: 50%;
 	width: 56px;
 	height: 56px;
@@ -67,7 +66,7 @@
 		min-width: 22px;
 		height: 1.82px;
 		min-height: 1.82px;
-		background: #4c858b;
+		background: $turquoise-blue;
 		margin-bottom: 7.33px;
 		border-radius: 2px;
 
@@ -86,7 +85,7 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: 16px;
-		line-height: math.div(23 / 16) * 100%;
+		line-height: 23 / 16 * 100%;
 		color: #4c858b;
 	}
 }
@@ -96,7 +95,7 @@
 	color: #000;
 	font-weight: 700;
 	font-size: 16px;
-	line-height: math.div(20, 16) * 100%;
+	line-height: 20/ 16 * 100%;
 
 	// .telephone__highlight
 	&__highlight {
@@ -113,6 +112,7 @@
 		svg {
 			max-width: 20px;
 			max-height: 20px;
+			fill: $turquoise-blue;
 		}
 	}
 }
@@ -151,7 +151,7 @@
 
 // .controls__cart
 .cart {
-	background: #e33e54;
+	background: $purple;
 	width: 21px;
 	height: 21px;
 	border-radius: 50%;
@@ -162,6 +162,6 @@
 		font-weight: 800;
 		font-family: Lato;
 		font-size: 11px;
-		line-height: math.div(13, 11) * 100%;
+		line-height: 13 / 11 * 100%;
 	}
 }

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://raaynoff.github.io/HawkingBros",
   "scripts": {
     "start": "gulp start",
     "build": "cross-env NODE_ENV=production gulp build",

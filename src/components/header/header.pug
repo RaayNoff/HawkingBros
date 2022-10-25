@@ -3,15 +3,18 @@ include ../../views/helpers/header-control.pug
 
 header.header
 	<div class="header-container">
-	
-		div.header__logo
-			img(src="./assets/images/Logo.png")
+
+		picture.header__logo
+			source(srcset="./assets/images/logosmall.png" type="image/png" media="(max-width: 320px)")
+			source(srcset="./assets/images/logomed.png" type="image/png" media="(max-width: 768.98px)")
+			source(srcset="./assets/images/logo.png" type="image/png")
+			img(src="./assets/images/logo.png" alt="Logo")
 
 		div.header__burger.burger
 			span.burger__span
 			span.burger__span
 			span.burger__span
-	
+
 		nav.header__nav.nav
 			a.nav__item(href="#") каталог товаров
 			a.nav__item(href="#") доставка и оплата
@@ -33,12 +36,11 @@ header.header
 			+control('loupe')
 			+control('heart')
 			+control('cart', true)
-				
-			
+
+
 
 	</div>
 
 
 
 
-		

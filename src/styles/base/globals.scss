@@ -20,11 +20,30 @@ h6 {
 }
 
 .header-container {
-	width: 1785px;
+	width: 100%;
+	max-width: 1815px;
+	padding: 0 15px;
 	margin: 0 auto;
+
+	@media (max-width: 768.98px) {
+		padding: 0;
+		max-width: 738px;
+		margin: 0 15px;
+	}
+	@media (max-width: 320.98px) {
+		max-width: 290px;
+	}
 }
 
 .container {
-	width: 1221px;
+	width: 100%;
+	max-width: 1221px;
 	margin: 0 auto;
+	@media (max-width: 768.98px) {
+		margin: 0;
+		padding: 0 15px;
+	}
+	@media (max-width: 320.98px) {
+		margin: 0;
+	}
 }

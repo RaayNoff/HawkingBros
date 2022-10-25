@@ -1,35 +1,65 @@
 .header {
 	margin-top: 26px;
 	margin-bottom: 56px;
+
 	.header-container {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		height: 97px;
+		@media (max-width: 768.98px) {
+			height: 86px;
+			padding-bottom: 24px;
+			display: grid;
+			grid-template-columns: 1fr 218px 56px;
+			border-bottom: 1px solid #e5e5e5;
+		}
+		@media (max-width: 320.98px) {
+			grid-template-columns: 1fr 70px 44px;
+			padding-bottom: 17px;
+		}
 	}
 
 	// .header__logo
 	&__logo {
 		margin-right: 52px;
+		@media (max-width: 768.98px) {
+			margin: 0;
+			order: 0;
+		}
 	}
 
 	// .header__burger
 	&__burger {
 		margin-right: 31px;
+
+		@media (max-width: 768.98px) {
+			order: 3;
+			margin: 0;
+		}
 	}
 
-	// .header__nav
+	// .header_ _nav
 	&__nav {
-		margin-right: 56px;
+		max-width: 621px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-right: 3%;
+		@media (max-width: 768.98px) {
+			display: none;
+		}
 	}
 
 	// .header__telephone
 	&__telephone {
 		margin-right: 70px;
+		flex-shrink: 0;
 	}
 
 	// .header__callmsg
 	&__callmsg {
+		flex-shrink: 0;
 		margin-right: 61px;
 		padding-bottom: 3px;
 		color: $deepCarmine;
@@ -38,11 +68,19 @@
 		font-size: 14px;
 		line-height: 17px;
 		text-transform: uppercase;
+
+		@media (max-width: 768.98px) {
+			display: none;
+		}
 	}
 
 	// .header__socials
 	&__socials {
 		margin-right: 60px;
+
+		@media (max-width: 767.98px) {
+			order: 2;
+		}
 	}
 
 	// .header__controls
@@ -54,6 +92,10 @@
 	border-radius: 50%;
 	width: 56px;
 	height: 56px;
+	@media (max-width: 320.98px) {
+		width: 44px;
+		height: 44px;
+	}
 
 	display: flex;
 	flex-direction: column;
@@ -64,8 +106,8 @@
 	&__span {
 		width: 22px;
 		min-width: 22px;
-		height: 1.82px;
-		min-height: 1.82px;
+		height: 2px;
+		min-height: 2px;
 		background: $turquoise-blue;
 		margin-bottom: 7.33px;
 		border-radius: 2px;
@@ -88,6 +130,10 @@
 		line-height: 23px;
 		color: #4c858b;
 	}
+
+	@media (max-width: 768.98px) {
+		display: none;
+	}
 }
 .telephone {
 	letter-spacing: 0.08em;
@@ -102,6 +148,9 @@
 		color: #4c858b;
 		font-weight: 400;
 	}
+	@media (max-width: 768.98px) {
+		display: none;
+	}
 }
 .socials {
 	width: 116px;
@@ -115,6 +164,9 @@
 			fill: $turquoise-blue;
 		}
 	}
+	@media (max-width: 768.98px) {
+		display: none;
+	}
 }
 .controls {
 	display: flex;
@@ -123,6 +175,10 @@
 		margin-right: 16px;
 		width: 56px;
 		height: 56px;
+		@media (max-width: 320.98px) {
+			width: 44px;
+			height: 44px;
+		}
 		border-radius: 50%;
 		border: 1px solid #e5e5e5;
 		display: flex;
@@ -137,6 +193,11 @@
 			max-width: 22px;
 			max-height: 22px;
 		}
+		@media (max-width: 320.98px) {
+			&:not(&:nth-child(3)) {
+				display: none;
+			}
+		}
 	}
 
 	// .controls__cart
@@ -146,6 +207,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media (max-width: 320.98px) {
+			transform: translate(100%, -50%);
+		}
 	}
 }
 

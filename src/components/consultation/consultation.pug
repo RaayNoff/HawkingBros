@@ -4,7 +4,7 @@ section.consultation
 		p.consultation__desc оставьте заявку или свяжитесь с нами в социальных сетях 
 
 
-		section.consultion__socials
+		section.consultation__socials
 			a.consultation__social: svg: use(xlink:href=`./assets/images/sprite.svg#vk`)
 			a.consultation__social: svg: use(xlink:href=`./assets/images/sprite.svg#telegram`)
 			a.consultation__social: svg: use(xlink:href=`./assets/images/sprite.svg#instagram`)
@@ -14,9 +14,9 @@ section.consultation
 			p.form__title Для <span>консультации</span> заполните форму!
 			p.form__text.default__description С Вами свяжутся в ближайшее время
 			section.form__controls
-				input.form__input(type="text" name="userName" placeholder="Ваше имя")
-				input.form__input(type="text" name="userPhone" placeholder="Ваш телефон")
-				button.form__button отправить
+				input.form__input(type="text" id="input-name" name="userName" placeholder="Ваше имя" required)
+				input.form__input(type="text" id="input-tel" name="userPhone" placeholder="Ваш телефон" required)
+				button.form__button(type="button" disabled) отправить
 
 
 

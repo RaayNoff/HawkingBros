@@ -1,13 +1,28 @@
 .pictures {
 	margin-bottom: 106px;
+	@media (max-width: 768.98px) {
+		margin-bottom: 56px;
+	}
 	// .pictures__title
 	&__title {
 		margin-bottom: 66px;
+		@media (max-width: 768.98px) {
+			margin-bottom: 34px;
+		}
+		@media (max-width: 320.98px) {
+			margin-bottom: 16px;
+		}
 	}
 
 	// .pictures__desc
 	&__desc {
 		margin-bottom: 48px;
+		@media (max-width: 768.98px) {
+			margin-bottom: 36px;
+		}
+		@media (max-width: 320.98px) {
+			margin-bottom: 16px;
+		}
 	}
 
 	// .pictures__container
@@ -15,6 +30,18 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		@media (max-width: 768.98px) {
+			max-height: 714px;
+			flex-direction: column;
+		}
+		@media (max-width: 320.98px) {
+			width: 100%;
+			max-height: fit-content;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 30px;
+			row-gap: 16px;
+		}
 	}
 
 	// .pictures__item
@@ -23,33 +50,70 @@
 		max-height: 260px;
 		margin-bottom: 30px;
 		filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+		@media (max-width: 768.98px) {
+			max-width: 226px;
+			max-height: 208px;
+			margin-right: 30px;
+		}
+		@media (max-width: 320.98px) {
+			margin: 0;
+			max-width: 130px;
+			max-height: 120px;
+		}
 
 		img {
-			max-width: 282px;
-			max-height: 260px;
+			width: 100%;
 		}
 
 		&::before {
+			margin: 0;
+			padding: 0;
 			display: block;
 			position: relative;
-			top: 21%;
+			top: 20.5%;
 			left: 81%;
 			content: " ";
 			width: 50px;
 			height: 50px;
 			border-top: 4px solid $turquoise-blue;
 			border-right: 4px solid $turquoise-blue;
+			@media (max-width: 768.98px) {
+				top: 0;
+				left: 0;
+				transform: translate(319.5%, 100%);
+			}
+			@media (max-width: 320.98px) {
+				width: 30px;
+				height: 30px;
+				border-top: 2px solid $turquoise-blue;
+				border-right: 2px solid $turquoise-blue;
+				transform: translate(306.5%, 100%);
+			}
 		}
 		&::after {
+			margin: 0;
+			padding: 0;
 			display: block;
 			position: relative;
-			top: -21.6%;
+			top: -22%;
 			left: 0%;
 			content: " ";
 			width: 50px;
 			height: 50px;
 			border-left: 4px solid $turquoise-blue;
 			border-bottom: 4px solid $turquoise-blue;
+			@media (max-width: 768.98px) {
+				top: 0;
+				left: 0;
+				transform: translate(0, -105%);
+			}
+			@media (max-width: 320.98px) {
+				width: 30px;
+				height: 30px;
+				border-left: 2px solid $turquoise-blue;
+				border-bottom: 2px solid $turquoise-blue;
+				transform: translate(0, -110%);
+			}
 		}
 	}
 }

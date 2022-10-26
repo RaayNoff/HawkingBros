@@ -3,8 +3,8 @@ const resultsContainer = document.querySelector(".js-results");
 const searchInput = document.querySelector(".js-input");
 
 loadBtn.addEventListener("click", function (evt) {
+  resultsContainer.innerHTML = "";
   const searchValue = searchInput.value.trim().toLowerCase();
-  console.log("SearchValue: ", searchValue);
 
   fetch(`https://api.github.com/users/${searchValue}`)
     .then((res) => {
@@ -15,14 +15,16 @@ loadBtn.addEventListener("click", function (evt) {
       }
     })
     .then((res) => res.json())
-    .then(
-      (data) =>
-        (resultsContainer.innerHTML = `<div class="response-container">
+    .then((data) =>
+      resultsContainer.insertAdjacentHTML(
+        "afterbegin",
+        `<div class="response-container">
                 <img src="${data.avatar_url}">
                 <p> Имя: <span>${data.name}</span><p>
                 <p> О себе: <span>${data.bio}</span><p>
                 <p> Кол-во репозиториев: <span>${data.public_repos}</span><p>
-            </div>`)
+            </div>`
+      )
     )
     .catch((error) => {
       const alertErrMsg = "Не удалось найти пользователя!\nПричина: ";

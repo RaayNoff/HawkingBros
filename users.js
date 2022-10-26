@@ -11,14 +11,17 @@ const usersRequestHandler = async () => {
 
     users.forEach((data) => {
       console.log(data);
-      printContainer.innerHTML += `<div class="response-container">
+      printContainer.insertAdjacentHTML(
+        "beforeend",
+        `<div class="response-container">
 		 <p> Имя: <span>${data.name}</span><p>
 		 <p> Никнейм: <span>${data.username}</span><p>
 		 <p> Город: <span>${data.address.city}</span><p>
 		 <p> Email: <span>${data.email}</span><p>
 		 <p> Сайт: <span>${data.website}</span><p>
 		 <p> Телефон: <span>${data.phone}</span><p>
-		 </div>`;
+		 </div>`
+      );
     });
   } catch (error) {
     alert("Произошла ошибка при запросе данных о пользователях");

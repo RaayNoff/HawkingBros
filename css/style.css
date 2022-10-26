@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #313131;
+}
+.wrapper__input {
+  background-color: #525252;
+  color: #fff;
+  outline: none;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  width: 240px;
+  height: 56px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 110%;
+}
 .wrapper__errmsg {
-  background-color: red;
+  color: #ca3e47;
+  font-size: 16px;
+  line-height: 125%;
 }

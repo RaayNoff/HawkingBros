@@ -13,7 +13,7 @@ const contentLoadedHandler = () => {
   }
 };
 
-const formSubmitHanler = (e) => {
+const formSubmitHandler = (e) => {
   e.preventDefault();
   body.style.background = colorInput.value;
   storageApi.setBackground(colorInput.value);

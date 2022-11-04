@@ -20,4 +20,4 @@ const formSubmitHandler = (e) => {
 };
 
 document.addEventListener('DOMContentLoaded', contentLoadedHandler);
-form.addEventListener('submit', formSubmitHanler);
+form.addEventListener('submit', formSubmitHandler);
